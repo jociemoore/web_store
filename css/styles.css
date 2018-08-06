@@ -1,0 +1,107 @@
+/* 
+========================
+General Styles
+========================
+*/
+body {
+	background: #ffd505;
+	font: 16px/24px Helvetica, Arial, sans-serif;
+}
+header,
+main {
+	margin: 0 auto;
+	padding: 35px 25px;
+	width: 900px;
+}
+main {
+	background: #ececec;
+}
+header {
+	background: #057ec1;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	color: #fff;
+	margin-bottom: 30px;
+}
+h1{
+	font-size: 2.5rem;
+}
+h2 {
+	font-size: 2rem;
+	margin-bottom: 20px;
+}
+h3,
+p {
+	text-align: left;
+}
+h3 {
+	font-size: 1.15rem;
+	font-weight: 700;	
+}
+ul {
+	font-size: 0;
+	margin-left: -9px;
+	margin-right: -9px;
+}
+ul:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+li {
+	background: #fff;
+	float: left;
+	font-size: 1rem;
+	margin: 1%;
+	padding: 15px;
+	width: 23%;
+	/*height: 225px;*/
+}
+li:hover,
+li > *:hover {
+	cursor: pointer;
+}
+figure {
+	height: 160px;
+	width: 100%;
+}
+img {
+	display: block;
+	height: 140px;
+	margin: 10px auto 15px auto;
+	width: auto;
+
+} 
+
+
+
+/* 
+========================
+Thumbnail Click
+========================
+*/
+
+input[type="checkbox"]:checked + label img {
+	padding: 95px 0 0 0 ;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 400px;
+	height: auto;
+	margin-left: -200px;
+	z-index: 10;
+}
+
+input[type="checkbox"]:checked + label figure:before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left:0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.5);
+}
+
+input {
+	display: none;
+}
