@@ -1,3 +1,3 @@
 # Webstore
 
-This is a basic webstore project that I used to practice front-end development with HTML and CSS.
+This frontend of this basic webstore was developed with HTML and CSS.
